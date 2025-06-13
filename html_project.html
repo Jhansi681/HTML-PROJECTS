@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<h1>COURSE REGISTRATION FORM</h1>
+<form action="response_prpject.html" method="GET" enctype="multipart/form-data">
+	<fieldset>
+		<legend>PERSONAL DETAILS</legend>
+		<table>
+			<tr>
+			<td><label>First Name</label></td>
+			<td><input type="text" name="FN" size="18" placeholder="Ex: Rohit" maxlength="15"></td>
+			</tr>
+			<tr>
+			<td><label>SurName</label></td>
+			<td><input type="text" name="Sn" size="18" placeholder="Ex: Gurgubelli" maxlength="15"></td>
+			</tr>
+			<tr>
+			<td><label>Mobile Number</label></td>
+			<td><input type="tel" name="mob" size="18" placeholder="Ex:987-897-0987" ></td>
+			</tr>
+			<tr>
+			<td><label>Email</label></td>
+			<td><input type="Email" name="mail" size="18" placeholder="Ex:jhansi@gmail.com"></td>
+			</tr>
+			<tr>
+			<td><label>Password</label></td>
+			<td><input type="password" name="pwd" size="18" placeholder="Min 5 characters" ></td>
+			</tr>
+			<tr>
+			<td><label>Confirm password</label></td>
+			<td><input type="password" name="cpwd" size="18" placeholder="Min 5 characters"></td>
+			</tr>
+			<tr>
+			<td><label>DOB</label></td>
+			<td><input type="date" name="dob" size="18"></td>
+			</tr>
+			<tr>
+			<td><label>Gender</label></td>
+			<td><input type="radio" name="gender" value="M">Male<input type="radio" name="gender" value="F">Female<input 				type="radio" name="gender" value="C">Custom</td>
+			</tr>
+			<tr>
+			<td><label>Select Country</label></td>
+			<td><select name="county">
+			<option value="INDIA">INDIA</option>
+			<option value="USA">USA</option>
+			<option value="CHINA">CHINA</option>
+			</select></td>
+			</tr>
+			<tr>
+			<td><label>Upload Picture</label></td>
+			<td><input type="file" name="pic"></td>
+			</tr>
+		</table>
+		<input type="reset">
+	</fieldset>
+	<fieldset>
+		<legend>COURSE DETAILS</legend>
+		<label>Select Course</label>
+		<select name="course">
+			<option value="Java Full Stack">Java Full Stack</option>
+			<option value="Python Full Stack">Pyhton Full Stack</option>
+			<option value="Data science">Data science</option>
+			<option value="Java Full Course">Java Full Course</option>
+		</select><br>
+		<label>Delivery Mode</label>
+		<input type="checkbox" name="Online" value="Online">Online
+		<input type="checkbox" name="OFFline" value="OFFline">OFFline<br>
+		<label>Comments</label><br>
+		<textarea rows="4" cols="40"></textarea>
+	</fieldset>
+	<button type="submit" style="border: none; background: none; cursor: pointer;">
+    <img src="https://t3.ftcdn.net/jpg/05/84/86/60/360_F_584866041_F8ltfy8hQsyzA8Y6jkrVe2CXKJkMwwzF.jpg" alt="Submit Form" height="75" width="75">
+</button>
+	
+<form>
